@@ -1,0 +1,373 @@
+/* Fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  background: 
+    linear-gradient(to bottom, rgba(255, 214, 224, 0.85),rgba(250, 108, 14, 0.85)),
+    url('images/cactus.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+html, body {
+  height: 90%;
+  margin: 0;
+}
+
+p {
+  text-align: left;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #c9004d;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav a:hover {
+  color: #fdfdfd; /* change to your preferred highlight color */
+  text-decoration: underline; /* optional underline */
+  transition: color 0.3s ease; /* smooth fade effect */
+  text-shadow: 0 0 6px #c9004d, 0 0 12px #cc9aad;
+
+}
+
+.site-logo:hover {
+  filter: drop-shadow(0 0 8px #fa6c0e);
+  transition: filter 0.3s ease;
+}
+
+.about-section {
+  padding: 0rem 5rem; /* reduced horizontal padding */
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: transparent; /* ✅ Fully removes the box */
+}
+
+.about-section h2 {
+  color: #c9004d;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  background-color: transparent;
+  max-width: 1100px;      /* increase container width */
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-content p {
+  max-width: 1200px;      /* wider than before */
+  font-size: 1.1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+  max-width: 900px; /* increased to stretch text horizontally */
+  margin-bottom: 0rem;
+}
+
+.about-photo {
+  width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.842);
+}
+
+
+.site-logo {
+  height: 175px; /* adjust size as needed */
+  width: auto;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4rem;
+  margin-top: 1rem;
+  color: #c9004d;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* optional slide effect */
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.3s; /* slight delay for smoother effect */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  margin-top: 2rem;
+  padding: 0rem;
+}
+
+.intro .text {
+  margin-top: 0rem; /* Try 1rem to 4rem depending on the look */
+  max-width: 400px;
+}
+
+
+.intro img {
+  margin-top: 8rem;
+  width: 625px;
+  height: 725px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.842);
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #c9004d;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #ffffff;
+}
+
+header {
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem; /* reduced horizontal padding */
+  max-width: 100%;
+}
+
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+.gallery-grid {
+  padding: 0 4rem; /* 4rem of space on left and right */
+}
+
+.gallery-grid img {
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1; /* Forces the image to be square */
+  object-fit: cover;   /* Crops to fill the square */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.842);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  max-width: 185px;    /* Optional: controls how large each square is */
+}
+
+
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.description {
+  background-color: #fff7f5;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.842);
+}
+
+.description ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Helvetica', sans-serif;
+}
+.project-detail h2 {
+  color: #c9004d;
+  margin-bottom: 2rem;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.842);
+  margin-bottom: 2rem;
+}
+
+.project-detail p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #fa6c0e;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffffff; /* or another highlight color */
+  text-decoration: underline; /* optional underline */
+}
+
+.back-link:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px #fa6c0e;
+}
+
+#contact {
+  margin-top: 5rem; /* increase this number for more space */
+  padding: 3rem 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.479);
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  padding: 0.75rem;
+  background-color: #fa6c0e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e05c00;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .about-content p {
+      max-width: 900px;
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.5rem; }
+  }
+}
